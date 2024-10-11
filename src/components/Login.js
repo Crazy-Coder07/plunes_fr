@@ -45,14 +45,14 @@ const Login = () => {
             };
 
             try {
-                const response = await axios.post('http://localhost:8080/api/auth/login', loginData);
+                const response = await axios.post('https://plunes-bk.onrender.com/api/auth/login', loginData);
                 
-                if (response.data && response.data.token) { // Check if token exists
+                if (response.data && response.data.token) { 
                     localStorage.setItem("token", response.data.token);
-                    console.log("Token saved:", localStorage.getItem("token")); // Debug log
-                    navigate('/dashboard'); // Navigate after successful login
+                    console.log("Token saved:", localStorage.getItem("token")); 
+                    navigate('/dashboard'); 
                 } else {
-                    setLoginMessage('Login failed. Please try again.'); // Handle unexpected response
+                    setLoginMessage('Login failed. Please try again.');
                 }
             } catch (error) {
                 console.error('Error logging in:', error);
