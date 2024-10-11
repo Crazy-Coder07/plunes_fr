@@ -1,0 +1,158 @@
+.dashboard {
+    padding: 20px;
+    background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
+  }
+  
+  .status-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .patient-status, .sip-status {
+    margin-bottom: 20px;
+  }
+  
+  .status-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .status-header h3 {
+    margin: 0;
+  }
+  
+  .status-header select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .status-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .status-row {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+  }
+  
+  .card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .circle {
+    background-color: #e0e7ff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .card-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .card-subtitle {
+    font-size: 14px;
+    margin: 0;
+    color: #666;
+  }
+  
+  .intimations {
+    background-color: #FFF8E3;
+    color: #E5BF59;
+  }
+  
+  .successful-claims {
+    background-color: #DFFFDA;
+    color: #30C118;
+  }
+  
+  .rejected-claims {
+    background-color: #FFEEEC;
+    color: #F93C23;
+  }
+  
+  .reimbursements {
+    background-color: #FBF1FF;
+    color: #A06DD6;
+  }
+  
+  /* SIP Section */
+  .sip-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .sip-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+  }
+  
+  .sip-label {
+    flex-basis: 10%;
+    font-size: 16px;
+  }
+  
+  .sip-number {
+    background-color: #e0e7ff;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    min-width: 50px;
+    margin: 0 auto;
+  }
+  
+  .view-btn {
+    padding: 10px 15px;
+    background-color: #1f73d0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .view-btn:hover {
+    background-color: #155a9b;
+  }
+  
