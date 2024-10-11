@@ -47,9 +47,8 @@ const Login = () => {
             try {
                 const response = await axios.post('https://plunes-bk.onrender.com/api/auth/login', loginData);
                 
-                if (response.data && response.data.token) { 
-                    localStorage.setItem("token", response.data.token);
-                    console.log("Token saved:", localStorage.getItem("token")); 
+                if (response?.data && response?.data?.token) { 
+                    localStorage.setItem("token", response?.data?.token);
                     navigate('/dashboard'); 
                 } else {
                     setLoginMessage('Login failed. Please try again.');
